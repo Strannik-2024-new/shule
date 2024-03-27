@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<!--Два велосипедиста одновременно выехали навстречу друг другу из двух посёлков и встретились через 3 часа.-->
+	<!--Первый велосипедист ехал со скоростью 12 км/ч, а второй - 14 км/ч.-->
+	<!--На каком расстоянии находятся посёлки-->
+	<script>
+		var time = 3;	// Время
+		var speedFirstCyclist = 12;	// Скорость первого велосипедиста
+		var speedSecondCyclist = 14;	// Скорость второго велосипедиста
+		
+		
+		var calculateDistance = function(time, speedOfFirstCyclist, speedOfSecondCyclist) {
+			// Алгоритм
+			// 1. Найти расстояние, который проехал первый велосипедист, умножив скорость на время
+			var distanceOfFirstCyclist = speedOfFirstCyclist * time;
+			// 2. Найти расстояние, который проехал второй велосипедист, умножив скорость на время
+			var distanceOfSecondCyclist = speedOfSecondCyclist * time;
+			// 3. Сложить полученные расстояния
+			var totalDistance = distanceOfFirstCyclist + distanceOfSecondCyclist;
+			// Вернуть полученное расстояние
+			return totalDistance;
+		}
+		
+		console.log(calculateDistance(3,12, 14));
+		console.log(calculateDistance(5,15, 17));
+	</script>	
+	</body>
+</html>

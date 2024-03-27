@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<script>
+		var buySomeBread = function(eggs){
+			// Алгоритм покупки хлеба
+			if (eggs) {
+				return 10;
+			} else {
+				return 1;
+			}
+			
+		};
+		
+		var buySomeBread_2 = function(eggs) {
+			// Алгоритм покупки хлеба
+			if (eggs) {
+				return 10;
+			} 
+			return 1;
+		};
+		
+		var buySomeBread_3 = function(eggs) {
+			// Алгоритм покупки хлеба
+			return  eggs ? 10: 1;
+		};
+		console.log(buySomeBread_3(true));
+	</script>	
+	</body>
+</html>
